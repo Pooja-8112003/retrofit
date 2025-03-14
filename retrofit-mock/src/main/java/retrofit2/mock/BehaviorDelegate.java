@@ -148,6 +148,11 @@ public final class BehaviorDelegate<T> {
       return null;
     }
   }
+public class HelloWorld {
+public static void main(String[] args) {
+System. out. println("Hello World!");
+}
+}
 
   static class ServiceMethodAdapterInfo {
     final boolean isSuspend;
