@@ -38,11 +38,12 @@ abstract class ServiceMethod<T> {
 
     return HttpServiceMethod.parseAnnotations(retrofit, method, requestFactory);
   }
-class demo(){
-public int id;
-return id;
+
+public class HelloWorld {
+public static void main(String[] args) {
+System. out. println("Hello World!");
 }
-       
+}
 
 
   abstract @Nullable T invoke(Object instance, Object[] args);
