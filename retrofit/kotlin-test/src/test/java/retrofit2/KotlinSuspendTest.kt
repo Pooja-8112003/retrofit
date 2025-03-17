@@ -113,6 +113,7 @@ class KotlinSuspendTest {
       runBlocking { example.body() }
       fail()
     } catch (e: IOException) {
+      log.error("Exception caught", e);
     }
   }
 
@@ -192,6 +193,7 @@ class KotlinSuspendTest {
       runBlocking { example.response() }
       fail()
     } catch (e: IOException) {
+      log.error("Exception caught", e);
     }
   }
 
@@ -394,4 +396,9 @@ class KotlinSuspendTest {
     override fun isDispatchNeeded(context: CoroutineContext): Boolean = false
     override fun dispatch(context: CoroutineContext, block: Runnable) = block.run()
   }
+  
+
+  fun buz(m: String) {
+   println("another message: $m")
+}
 }
