@@ -1,0 +1,17 @@
+name: reviewdog
+on: [pull_request]
+jobs:
+  detekt:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Detekt
+        uses: alaegin/Detekt-Action@v1.19
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          detekt_config: config/detekt-config.yml
+          reviewdog_level: error
+          reviewdog_filter: added
+          reviewdog_reporter: github-pr-check
+          detekt_excludes: '**/build/**,**/.idea/**'
+          fail_on_error: true
