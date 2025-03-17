@@ -43,9 +43,5 @@ fun main(args: Array<String>) {
 
     println("The sum is: $sum")
     
-    val reader = Scanner(System.`in`)
-    print("Enter a number: ")
-    var integer:Int = reader.nextInt()
-    println("You entered: $integer")
-}
+   }
 }
