@@ -19,6 +19,7 @@ import okhttp3.mockwebserver.MockWebServer
 import org.junit.Assert.assertNotNull
 import org.junit.Rule
 import org.junit.Test
+import java.util.Scanner
 
 class KotlinExtensionsTest {
   @get:Rule val server = MockWebServer()
@@ -44,15 +45,10 @@ fun main(args: Array<String>) {
 }
 fun main(args: Array<String>) {
 
+    
     val reader = Scanner(System.`in`)
-
     print("Enter a number: ")
-    val num = reader.nextInt()
-
-    if (num % 2 == 0)
-        println("$num is even")
-    else
-        println("$num is odd")
+    var integer:Int = reader.nextInt()
+    println("You entered: $integer")
 }
-
 }
