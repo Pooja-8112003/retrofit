@@ -113,6 +113,7 @@ class KotlinSuspendTest {
       runBlocking { example.body() }
       fail()
     } catch (e: IOException) {
+      log.error("Exception caught", e);
     }
   }
 
@@ -192,6 +193,7 @@ class KotlinSuspendTest {
       runBlocking { example.response() }
       fail()
     } catch (e: IOException) {
+      log.error("Exception caught", e);
     }
   }
 
