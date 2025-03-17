@@ -394,4 +394,7 @@ class KotlinSuspendTest {
     override fun isDispatchNeeded(context: CoroutineContext): Boolean = false
     override fun dispatch(context: CoroutineContext, block: Runnable) = block.run()
   }
+println("Hello wolrd!")
+}
+
 }
