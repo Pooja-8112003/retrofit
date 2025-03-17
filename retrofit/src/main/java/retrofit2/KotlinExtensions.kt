@@ -121,5 +121,8 @@ internal suspend fun Throwable.suspendAndThrow(): Nothing {
       continuation.intercepted().resumeWithException(this@suspendAndThrow)
     }
     COROUTINE_SUSPENDED
+{
+println("Hello, world!")
+println ("all is well")
   }
 }
