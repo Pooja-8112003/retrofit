@@ -123,5 +123,6 @@ internal suspend fun Throwable.suspendAndThrow(): Nothing {
     COROUTINE_SUSPENDED
 {
 println("Hello, world!")
+println ("all is well")
   }
 }
