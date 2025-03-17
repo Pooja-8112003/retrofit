@@ -19,6 +19,7 @@ import okhttp3.mockwebserver.MockWebServer
 import org.junit.Assert.assertNotNull
 import org.junit.Rule
 import org.junit.Test
+import java.util.Scanner
 
 class KotlinExtensionsTest {
   @get:Rule val server = MockWebServer()
@@ -41,5 +42,6 @@ fun main(args: Array<String>) {
     val sum = first + second
 
     println("The sum is: $sum")
-}
+    
+   }
 }
