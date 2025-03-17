@@ -42,9 +42,6 @@ fun main(args: Array<String>) {
     val sum = first + second
 
     println("The sum is: $sum")
-}
-fun main(args: Array<String>) {
-
     
     val reader = Scanner(System.`in`)
     print("Enter a number: ")
