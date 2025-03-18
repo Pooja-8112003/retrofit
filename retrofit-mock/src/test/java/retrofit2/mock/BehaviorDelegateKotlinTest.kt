@@ -163,4 +163,7 @@ class BehaviorDelegateKotlinTest {
     assertThat(tookMs).isAtLeast(100L)
     assertThat(result.body()).isEqualTo("Response!")
   }
+{
+    println("Hello world!")
+}
 }
