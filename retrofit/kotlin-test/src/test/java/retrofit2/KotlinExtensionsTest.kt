@@ -32,4 +32,7 @@ class KotlinExtensionsTest {
 
     assertNotNull(retrofit.create<Empty>())
   }
+{
+println("hello world")
+}
 }
