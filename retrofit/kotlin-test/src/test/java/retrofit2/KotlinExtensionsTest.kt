@@ -32,10 +32,4 @@ class KotlinExtensionsTest {
 
     assertNotNull(retrofit.create<Empty>())
   }
-
-{
-println("getting errors")
-println("getting errors")
-
-}
 }
