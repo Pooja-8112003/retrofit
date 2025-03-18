@@ -17,5 +17,5 @@ jobs:
         uses: alaegin/Detekt-Action@v1.23.7
         with:
           github_token: ${{ secrets.github_token }}
-          detekt_config: C:\Users\Intern\Downloads\retrofit\.github\workflows
+          detekt_config: .github\workflows
           reviewdog_filter: diff_context
