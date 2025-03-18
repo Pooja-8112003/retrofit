@@ -35,4 +35,7 @@ class KotlinExtensionsTest {
 {
 println ("hello world!")
 }
+{
+     println ("run successful!")
+}
 }
