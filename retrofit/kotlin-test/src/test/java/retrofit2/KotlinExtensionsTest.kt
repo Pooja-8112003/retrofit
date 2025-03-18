@@ -35,5 +35,7 @@ class KotlinExtensionsTest {
 
 {
 println("getting errors")
+println("getting errors")
+
 }
 }
