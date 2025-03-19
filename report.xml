@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="4.3">
+<file name="C:/Users/Intern/Downloads/retrofit/retrofit/kotlin-test/src/test/java/retrofit2/KotlinSuspendTest.kt">
+	<error line="115" column="30" severity="warning" message="Empty catch block detected. If the exception can be safely ignored, name the exception according to one of the exemptions as per the configuration of this rule." source="detekt.EmptyCatchBlock" />
+	<error line="194" column="30" severity="warning" message="Empty catch block detected. If the exception can be safely ignored, name the exception according to one of the exemptions as per the configuration of this rule." source="detekt.EmptyCatchBlock" />
+	<error line="115" column="14" severity="warning" message="The caught exception is swallowed. The original exception could be lost." source="detekt.SwallowedException" />
+	<error line="194" column="14" severity="warning" message="The caught exception is swallowed. The original exception could be lost." source="detekt.SwallowedException" />
+	<error line="16" column="1" severity="warning" message="Package name should match the pattern: [a-z]+(\.[a-z][A-Za-z0-9]*)*" source="detekt.PackageNaming" />
+	<error line="276" column="20" severity="warning" message="Function get has 3 return statements which exceeds the limit of 2." source="detekt.ReturnCount" />
+	<error line="135" column="1" severity="warning" message="Line detected, which is longer than the defined maximum line length in the code style." source="detekt.MaxLineLength" />
+</file>
+<file name="C:/Users/Intern/Downloads/retrofit/retrofit/kotlin-test/src/test/java/retrofit2/KotlinExtensionsTest.kt">
+	<error line="16" column="1" severity="warning" message="Package name should match the pattern: [a-z]+(\.[a-z][A-Za-z0-9]*)*" source="detekt.PackageNaming" />
+</file>
+<file name="C:/Users/Intern/Downloads/retrofit/retrofit/src/main/java/retrofit2/KotlinExtensions.kt">
+	<error line="19" column="1" severity="warning" message="Package name should match the pattern: [a-z]+(\.[a-z][A-Za-z0-9]*)*" source="detekt.PackageNaming" />
+</file>
+<file name="C:/Users/Intern/Downloads/retrofit/retrofit-converters/kotlinx-serialization/src/main/java/retrofit2/converter/kotlinx/serialization/DeserializationStrategyConverter.kt">
+	<error line="1" column="1" severity="warning" message="Package name should match the pattern: [a-z]+(\.[a-z][A-Za-z0-9]*)*" source="detekt.PackageNaming" />
+</file>
+<file name="C:/Users/Intern/Downloads/retrofit/retrofit-converters/kotlinx-serialization/src/main/java/retrofit2/converter/kotlinx/serialization/Factory.kt">
+	<error line="3" column="1" severity="warning" message="Package name should match the pattern: [a-z]+(\.[a-z][A-Za-z0-9]*)*" source="detekt.PackageNaming" />
+</file>
+<file name="C:/Users/Intern/Downloads/retrofit/retrofit-converters/kotlinx-serialization/src/main/java/retrofit2/converter/kotlinx/serialization/SerializationStrategyConverter.kt">
+	<error line="1" column="1" severity="warning" message="Package name should match the pattern: [a-z]+(\.[a-z][A-Za-z0-9]*)*" source="detekt.PackageNaming" />
+</file>
+<file name="C:/Users/Intern/Downloads/retrofit/retrofit-converters/kotlinx-serialization/src/main/java/retrofit2/converter/kotlinx/serialization/Serializer.kt">
+	<error line="21" column="3" severity="warning" message="A member is named after the class. This might result in confusion. Either rename the member or change it to a constructor." source="detekt.MemberNameEqualsClassName" />
+	<error line="1" column="1" severity="warning" message="Package name should match the pattern: [a-z]+(\.[a-z][A-Za-z0-9]*)*" source="detekt.PackageNaming" />
+</file>
+<file name="C:/Users/Intern/Downloads/retrofit/retrofit-converters/kotlinx-serialization/src/test/java/retrofit2/converter/kotlinx/serialization/KotlinSerializationConverterFactoryBytesTest.kt">
+	<error line="1" column="1" severity="warning" message="Package name should match the pattern: [a-z]+(\.[a-z][A-Za-z0-9]*)*" source="detekt.PackageNaming" />
+</file>
+<file name="C:/Users/Intern/Downloads/retrofit/retrofit-converters/kotlinx-serialization/src/test/java/retrofit2/converter/kotlinx/serialization/KotlinSerializationConverterFactoryStringTest.kt">
+	<error line="1" column="1" severity="warning" message="Package name should match the pattern: [a-z]+(\.[a-z][A-Za-z0-9]*)*" source="detekt.PackageNaming" />
+</file>
+<file name="C:/Users/Intern/Downloads/retrofit/retrofit-converters/kotlinx-serialization/src/test/java/retrofit2/converter/kotlinx/serialization/KotlinxSerializationConverterFactoryContextualListTest.kt">
+	<error line="1" column="1" severity="warning" message="Package name should match the pattern: [a-z]+(\.[a-z][A-Za-z0-9]*)*" source="detekt.PackageNaming" />
+</file>
+<file name="C:/Users/Intern/Downloads/retrofit/retrofit-converters/kotlinx-serialization/src/test/java/retrofit2/converter/kotlinx/serialization/KotlinxSerializationConverterFactoryContextualTest.kt">
+	<error line="1" column="1" severity="warning" message="Package name should match the pattern: [a-z]+(\.[a-z][A-Za-z0-9]*)*" source="detekt.PackageNaming" />
+</file>
+<file name="C:/Users/Intern/Downloads/retrofit/retrofit-mock/src/main/java/retrofit2/mock/KotlinExtensions.kt">
+	<error line="16" column="1" severity="warning" message="Package name should match the pattern: [a-z]+(\.[a-z][A-Za-z0-9]*)*" source="detekt.PackageNaming" />
+</file>
+<file name="C:/Users/Intern/Downloads/retrofit/retrofit-mock/src/test/java/retrofit2/mock/BehaviorDelegateKotlinTest.kt">
+	<error line="16" column="1" severity="warning" message="Package name should match the pattern: [a-z]+(\.[a-z][A-Za-z0-9]*)*" source="detekt.PackageNaming" />
+</file>
+<file name="C:/Users/Intern/Downloads/retrofit/retrofit-response-type-keeper/src/main/kotlin/retrofit2/keeper/RetrofitResponseTypeKeepProcessor.kt">
+	<error line="16" column="1" severity="warning" message="Package name should match the pattern: [a-z]+(\.[a-z][A-Za-z0-9]*)*" source="detekt.PackageNaming" />
+</file>
+<file name="C:/Users/Intern/Downloads/retrofit/retrofit-response-type-keeper/src/test/kotlin/retrofit2/keeper/RetrofitResponseTypeKeepProcessorTest.kt">
+	<error line="16" column="1" severity="warning" message="Package name should match the pattern: [a-z]+(\.[a-z][A-Za-z0-9]*)*" source="detekt.PackageNaming" />
+</file>
+</checkstyle>
