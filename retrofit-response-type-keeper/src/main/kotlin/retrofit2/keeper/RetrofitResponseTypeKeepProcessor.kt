@@ -103,4 +103,5 @@ class RetrofitResponseTypeKeepProcessor : AbstractProcessor() {
       }
     }
   }
+println("hello wolrd")
 }
