@@ -24,6 +24,12 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
           token: ${{ secrets.CHECKOUT_PAT }}
 
+      - name: detekt
+        uses: alaegin/Detekt-Action@v1.19
+        with:
+          github_token: ${{ secrets.github_token }}
+          detekt_config: detekt-config.yml
+
       - name: Setup detekt
         uses: peter-murray/setup-detekt@v2
         with:
@@ -32,3 +38,4 @@ jobs:
 
       - name: Detekt
         run: detekt-cli -i ${{ github.workspace }}
+
