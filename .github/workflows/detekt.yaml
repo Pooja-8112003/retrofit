@@ -16,11 +16,13 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
           token: ${{ secrets.GITHUB_TOKEN }}
 
+
       - name: Get changed Kotlin files
         id: changed-files
         run: |
           CHANGED_FILES=$(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }} | grep '\.kt$')
           echo "changed_files=$CHANGED_FILES" >> $GITHUB_OUTPUT
+
 
       - name: Setup detekt
         uses: peter-murray/setup-detekt@v2
