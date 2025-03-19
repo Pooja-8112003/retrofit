@@ -44,4 +44,5 @@ internal sealed class Serializer {
     }
   }
 println("hello world")
+println("hello world")
 }
