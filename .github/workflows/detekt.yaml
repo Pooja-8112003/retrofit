@@ -10,7 +10,7 @@ jobs:
         with:
           submodules: true
           ref: ${{ github.event.pull_request.head.sha }}
-          token: ${{ secrets.CHECKOUT_PAT }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup detekt
         uses: peter-murray/setup-detekt@v2
