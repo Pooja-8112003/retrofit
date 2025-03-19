@@ -1,0 +1,34 @@
+name: Detekt
+
+on:
+  pull_request:
+    paths:
+      - '**.kt'
+    types: [opened, ready_for_review]
+    branches:
+      - dev
+      - stage
+      - master
+
+permissions:
+  pull-requests: write
+
+jobs:
+  QualityCheck:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4.1.0
+        with:
+          submodules: true
+          ref: ${{ github.event.pull_request.head.sha }}
+          token: ${{ secrets.CHECKOUT_PAT }}
+
+      - name: Setup detekt
+        uses: peter-murray/setup-detekt@v2
+        with:
+          detekt_version: 1.20
+          add_to_path: true
+
+      - name: Detekt
+        run: detekt-cli -i ${{ github.workspace }}
