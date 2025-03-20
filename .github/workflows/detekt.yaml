@@ -23,7 +23,7 @@ jobs:
         id: list-files
         with:
           githubToken: ${{ github.token }}
-          outputFormat: 'csv' 
+          outputFormat: 'csv'
 
       - name: Print changed files (debug)
         run: |
@@ -32,4 +32,5 @@ jobs:
           done
 
       - name: Detekt
-        run: detekt-cli -i ${{ fromJson(format('["{0}"]', steps.list-files.outputs.pullRequestFiles)) }}
+        run: |
+          detekt-cli -i ${{ fromJson(format('["{0}"]', steps.list-files.outputs.pullRequestFiles)) }}
