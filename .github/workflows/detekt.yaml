@@ -23,7 +23,7 @@ jobs:
         id: list-files
         with:
           githubToken: ${{ github.token }}
-          outputFormat: 'comma-delimited'
+          outputFormat: 'csv' 
 
       - name: Print changed files (debug)
         run: |
