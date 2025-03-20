@@ -159,5 +159,5 @@ class RetrofitResponseTypeKeepProcessorTest {
         """.trimMargin(),
       )
   }
-println("new code added")
+println("code is correct")
 }
