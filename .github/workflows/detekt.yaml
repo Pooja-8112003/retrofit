@@ -21,9 +21,9 @@ jobs:
       - name: List changed files
         uses: ankitjain28may/list-files-in-pr@v1.0
         id: list-files
-        with:
+        with: 
           githubToken: ${{ secrets.GITHUB_TOKEN }}
-          outputFormat: 'csv'
+          outputFormat: json
 
       - name: Print changed files (debug)
         run: |
