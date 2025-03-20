@@ -161,4 +161,6 @@ class RetrofitResponseTypeKeepProcessorTest {
   }
 println("new changes done")
 println("new changes done and saved")
+println("new changes done")
+println("new changes done and saved")
 }
