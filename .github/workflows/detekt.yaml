@@ -27,7 +27,7 @@ jobs:
 
       - name: Print changed files (debug)
         run: |
-          files=$(echo "${{ steps.list-files.outputs.pullRequestFiles }}" | jq -R '[split(",") | map(r)]')
+          files=$(echo "${{ steps.list-files.outputs.pullRequestFiles }}" | jq -R '[split(",") | map(@json)]')
           echo "Files: $files"
           for file in $(echo "$files" | jq -r '.[]'); do
             echo "Changed Files - $file."
@@ -35,4 +35,4 @@ jobs:
 
       - name: Detekt
         run: |
-          detekt-cli -i $(echo "${{ steps.list-files.outputs.pullRequestFiles }}" | jq -R '[split(",") | map(r)]' | jq -r '.[]')
+          detekt-cli -i $(echo "${{ steps.list-files.outputs.pullRequestFiles }}" | jq -R '[split(",") | map(@json)]' | jq -r '.[]' | sed 's/"//g')
