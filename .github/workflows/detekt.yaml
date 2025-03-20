@@ -22,14 +22,16 @@ jobs:
         uses: ankitjain28may/list-files-in-pr@v1.0
         id: list-files
         with:
-          githubToken: ${{ github.token }}
-          outputFormat: 'comma-delimited'
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          outputFormat: 'csv'
 
       - name: Print changed files (debug)
         run: |
-          for file in ${{ fromJson('["' + steps.list-files.outputs.pullRequestFiles + '"]' ) }}; do
+          for file in ${{ fromJson(steps.list-files.outputs.pullRequestFiles) }}; do
             echo "Changed Files - ${file}."
           done
 
       - name: Detekt
-        run: detekt-cli -i ${{ fromJson('["' + steps.list-files.outputs.pullRequestFiles + '"]' ) }}
+        run: |
+          changed_files=$(echo ${{ fromJson(steps.list-files.outputs.pullRequestFiles) }} | tr ',' ' ')
+          detekt-cli -i $changed_files
