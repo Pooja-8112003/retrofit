@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues/>
+  <CurrentIssues>
+    <ID>EmptyCatchBlock:KotlinSuspendTest.kt$KotlinSuspendTest${ }</ID>
+    <ID>MaxLineLength:KotlinSuspendTest.kt$KotlinSuspendTest$"Response from retrofit2.KotlinSuspendTest\$Service.body was null but response body type was declared as non-null"</ID>
+    <ID>MemberNameEqualsClassName:Serializer.kt$Serializer$fun serializer(type: Type): KSerializer&lt;Any&gt;</ID>
+    <ID>PackageNaming:BehaviorDelegateKotlinTest.kt$package retrofit2.mock</ID>
+    <ID>PackageNaming:DeserializationStrategyConverter.kt$package retrofit2.converter.kotlinx.serialization</ID>
+    <ID>PackageNaming:Factory.kt$package retrofit2.converter.kotlinx.serialization</ID>
+    <ID>PackageNaming:KotlinExtensions.kt$package retrofit2</ID>
+    <ID>PackageNaming:KotlinExtensions.kt$package retrofit2.mock</ID>
+    <ID>PackageNaming:KotlinExtensionsTest.kt$package retrofit2</ID>
+    <ID>PackageNaming:KotlinSerializationConverterFactoryBytesTest.kt$package retrofit2.converter.kotlinx.serialization</ID>
+    <ID>PackageNaming:KotlinSerializationConverterFactoryStringTest.kt$package retrofit2.converter.kotlinx.serialization</ID>
+    <ID>PackageNaming:KotlinSuspendTest.kt$package retrofit2</ID>
+    <ID>PackageNaming:KotlinxSerializationConverterFactoryContextualListTest.kt$package retrofit2.converter.kotlinx.serialization</ID>
+    <ID>PackageNaming:KotlinxSerializationConverterFactoryContextualTest.kt$package retrofit2.converter.kotlinx.serialization</ID>
+    <ID>PackageNaming:RetrofitResponseTypeKeepProcessor.kt$package retrofit2.keeper</ID>
+    <ID>PackageNaming:RetrofitResponseTypeKeepProcessorTest.kt$package retrofit2.keeper</ID>
+    <ID>PackageNaming:SerializationStrategyConverter.kt$package retrofit2.converter.kotlinx.serialization</ID>
+    <ID>PackageNaming:Serializer.kt$package retrofit2.converter.kotlinx.serialization</ID>
+    <ID>ReturnCount:KotlinSuspendTest.kt$KotlinSuspendTest.&lt;no name provided&gt;$override fun get( returnType: Type, annotations: Array&lt;Annotation&gt;, retrofit: Retrofit, ): CallAdapter&lt;*, *&gt;?</ID>
+    <ID>SwallowedException:KotlinSuspendTest.kt$KotlinSuspendTest$e: IOException</ID>
+  </CurrentIssues>
+</SmellBaseline>
