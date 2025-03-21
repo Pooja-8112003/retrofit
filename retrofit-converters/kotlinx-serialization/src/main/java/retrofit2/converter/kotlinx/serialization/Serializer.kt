@@ -43,5 +43,8 @@ internal sealed class Serializer {
       return RequestBody.create(contentType, bytes)
     }
   }
-println(newline)
+fun main() {
+    val number: Int = "abc" 
+    println(number)
+}
 }
