@@ -160,6 +160,5 @@ class RetrofitResponseTypeKeepProcessorTest {
       )
   }
 println("added a new workflow")
-println("added a new workflow")
-println("added a new workflow")
+println("workflow is edited")
 }
