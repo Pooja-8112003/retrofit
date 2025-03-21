@@ -27,4 +27,4 @@ jobs:
 
       - name: Detekt
         run: |
-          detekt-cli -i ${{ steps.list-files.outputs.pullRequestFiles }}
+          detekt-cli -b ${{ github.workspace }}/baseline.xml -i ${{ steps.list-files.outputs.pullRequestFiles }}
