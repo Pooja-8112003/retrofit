@@ -25,18 +25,6 @@ jobs:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           outputFormat: 'csv'
 
-      - name: Echo step output
-        run: echo ${{ steps.list-files.outputs.pullRequestFiles }}
-
-      # - name: Create comma-separated string
-      #   run:
-      #     commaSeparatedFiles=""
-      #     for file in ${{ fromJson(format('["{0}"]', steps.list-files.outputs.pullRequestFiles)) }}; do
-      #       commaSeparatedFiles+="${file},"
-      #     done
-      #     commaSeparatedFiles="${commaSeparatedFiles%,}"
-      #     echo "commaSeparatedFiles=$commaSeparatedFiles" >> $GITHUB_OUTPUT
-
-      # - name: Detekt
-      #   run: |
-      #     detekt-cli -i ${{ steps.list-files.outputs.pullRequestFiles }}
+      - name: Detekt
+        run: |
+          detekt-cli -i ${{ steps.list-files.outputs.pullRequestFiles }}
