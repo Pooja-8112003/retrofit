@@ -22,8 +22,8 @@ jobs:
         uses: ankitjain28may/list-files-in-pr@v1.0
         id: list-files
         with: 
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
-          outputFormat: json
+          githubToken: ${{ github.token }}
+          outputFormat: 'json'
 
       - name: Print changed files (debug)
         run: |
