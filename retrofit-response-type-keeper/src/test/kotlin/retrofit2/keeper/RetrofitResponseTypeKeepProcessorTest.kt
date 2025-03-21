@@ -159,6 +159,5 @@ class RetrofitResponseTypeKeepProcessorTest {
         """.trimMargin(),
       )
   }
-println("adding a line")
-println("adding another line")
+println("added a new workflow")
 }
