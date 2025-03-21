@@ -37,4 +37,5 @@ jobs:
 
       - name: Detekt
         run: |
-          detekt-cli -i ${{ env.COMMA_SEPARATED_FILES }}
+         detekt-cli -i ${{ env.COMMA_SEPARATED_FILES }}
+
