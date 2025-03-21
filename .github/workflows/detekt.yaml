@@ -26,5 +26,5 @@ jobs:
           outputFormat: 'csv'
 
       - name: Detekt
-        run: |
-          detekt-cli -b ${{ github.workspace }}/baseline.xml -i ${{ steps.list-files.outputs.pullRequestFiles }}
+        run:
+          detekt-cli -b baseline.xml -i ${{ steps.list-files.outputs.pullRequestFiles }}
