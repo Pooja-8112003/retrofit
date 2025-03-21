@@ -9,7 +9,7 @@ jobs:
         uses: actions/checkout@v4.1.0
         with:
           submodules: true
-          ref: ${{ github.event.pull_request.head.sha }}
+          ref: ${{ github.event.pull_Request.head.sha }}
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup detekt
@@ -31,10 +31,9 @@ jobs:
           for file in ${{ fromJson(format('["{0}"]', steps.list-files.outputs.pullRequestFiles)) }}; do
             commaSeparatedFiles+="${file},"
           done
-          # Remove the trailing comma
           commaSeparatedFiles="${commaSeparatedFiles%,}"
           echo "COMMA_SEPARATED_FILES=$commaSeparatedFiles" >> $GITHUB_ENV
 
       - name: Detekt
         run: |
-          detekt-cli -i ${{ env.COMMA_SEPARATED_FILES }}
+          detekt-cli -i "${COMMA_SEPARATED_FILES}" 
