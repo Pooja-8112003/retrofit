@@ -21,18 +21,20 @@ jobs:
       - name: List changed files
         uses: ankitjain28may/list-files-in-pr@v1.0
         id: list-files
-        with: 
-          githubToken: ${{ github.token }}
+        with:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
           outputFormat: 'csv'
 
-      - name: Print changed files (debug)
+      - name: Create comma-separated string
         run: |
-          files=$(echo "${{ steps.list-files.outputs.pullRequestFiles }}" | jq -R '[split(",") | map(@json)]')
-          echo "Files: $files"
-          for file in $(echo "$files" | jq -r '.[]'); do
-            echo "Changed Files - $file."
+          commaSeparatedFiles=""
+          for file in ${{ fromJson(format('["{0}"]', steps.list-files.outputs.pullRequestFiles)) }}; do
+            commaSeparatedFiles+="${file},"
           done
+          # Remove the trailing comma
+          commaSeparatedFiles="${commaSeparatedFiles%,}"
+          echo "COMMA_SEPARATED_FILES=$commaSeparatedFiles" >> $GITHUB_ENV
 
       - name: Detekt
         run: |
-          detekt-cli -i $(echo "${{ steps.list-files.outputs.pullRequestFiles }}" | jq -R '[split(",") | map(@json)]' | jq -r '.[]' | sed 's/"//g')
+          detekt-cli -i ${{ env.COMMA_SEPARATED_FILES }}
