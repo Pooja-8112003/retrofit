@@ -31,10 +31,9 @@ jobs:
           for file in ${{ fromJson(format('["{0}"]', steps.list-files.outputs.pullRequestFiles)) }}; do
             commaSeparatedFiles+="${file},"
           done
-          # Remove the trailing comma
           commaSeparatedFiles="${commaSeparatedFiles%,}"
-          echo "COMMA_SEPARATED_FILES=$commaSeparatedFiles" >> $GITHUB_ENV
+          echo "commaSeparatedFiles=$commaSeparatedFiles" >> $GITHUB_OUTPUT
 
       - name: Detekt
         run: |
-          detekt-cli -i ${{ env.COMMA_SEPARATED_FILES }}
+          detekt-cli -i ${{ steps.list-files.outputs.pullRequestFiles }}
