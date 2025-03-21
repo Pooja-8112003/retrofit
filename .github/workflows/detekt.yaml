@@ -27,7 +27,8 @@ jobs:
 
       - name: Detekt
         run:
-          detekt-cli -b baseline.xml -i ${{ steps.list-files.outputs.pullRequestFiles }} --report xml:detekt.xml
+
+           detekt-cli -b baseline.xml -i ${{ steps.list-files.outputs.pullRequestFiles }} --report xml:report.xml
 
       - name: Reviewdog
         uses: reviewdog/action-github-check@v1

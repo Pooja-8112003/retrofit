@@ -165,6 +165,7 @@ class BehaviorDelegateKotlinTest {
   }
 {
 println("hello world")
+println("new file change")
 
 
 }
