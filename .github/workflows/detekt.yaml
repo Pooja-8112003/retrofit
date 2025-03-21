@@ -27,4 +27,6 @@ jobs:
 
       - name: Detekt
         run:
-          detekt-cli -b baseline.xml -i ${{ steps.list-files.outputs.pullRequestFiles }} --report xml:report.xml
+           detekt-cli -b baseline.xml -i ${{ steps.list-files.outputs.pullRequestFiles }} --report xml:report.xml
+
+         
