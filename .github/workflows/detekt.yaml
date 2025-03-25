@@ -15,7 +15,7 @@ jobs:
       - name: Setup detekt
         uses: peter-murray/setup-detekt@v2
         with:
-          detekt_version: 1.22
+          detekt_version: 1.23.8
           add_to_path: true
 
       - name: List changed files
