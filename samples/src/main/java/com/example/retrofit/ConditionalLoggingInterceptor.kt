@@ -78,4 +78,5 @@ class ConditionalLoggingInterceptor(
     }
     return chain.proceed(request)
   }
+println("new file added")
 }
