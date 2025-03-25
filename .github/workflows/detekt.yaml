@@ -27,12 +27,14 @@ jobs:
 
       - name: Detekt
         run:
-          detekt-cli -b baseline.xml -i ${{ steps.list-files.outputs.pullRequestFiles }} --report xml:detekt.xml
+           detekt-cli -b baseline.xml -i ${{ steps.list-files.outputs.pullRequestFiles }} --report xml:detekt.xml
 
       - name: Reviewdog
         uses: reviewdog/action-github-check@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          reporter: detekt
-          level: warning
+          reporter: github-pr-check
+          level: error
           path: detekt.xml
+
+         
