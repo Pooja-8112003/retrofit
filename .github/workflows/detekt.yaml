@@ -26,15 +26,14 @@ jobs:
           outputFormat: 'csv'
 
       - name: Detekt
-        run:
-           detekt-cli -b baseline xml -i ${{ steps.list-files.outputs.pullRequestFiles }} --report xml:detekt.xml
+        run: 
+          detekt-cli -b baseline.xml -i ${{ steps.list-files.outputs.pullRequestFiles }} --report xml:detekt.xml
 
       - name: Reviewdog
-        uses: reviewdog/action-setup@e04ffabe3898a0af8d0fb1af00c188831c4b5893 # v1.3.2
+        uses: reviewdog/action-github-check@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-check
           level: error
           path: detekt.xml
-
          
