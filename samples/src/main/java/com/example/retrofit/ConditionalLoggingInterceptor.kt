@@ -79,6 +79,6 @@ class ConditionalLoggingInterceptor(
     return chain.proceed(request)
   }
 println("new file added in the code")
-println("detekt code is modified")
-println("report name is modified to detekt")
+println("new file added in the code")
+
 }
