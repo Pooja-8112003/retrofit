@@ -34,5 +34,6 @@ class KotlinExtensionsTest {
   }
 {
 println("hello world")
+println("hello wolrd")
 }
 }
