@@ -80,4 +80,5 @@ class ConditionalLoggingInterceptor(
   }
 println("new file added in the code")
 println("detekt code is modified")
+println("report name is modified to detekt")
 }
