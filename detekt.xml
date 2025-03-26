@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<checkstyle version="4.3">
-<file name="C:/Users/Intern/Downloads/retrofit/retrofit-converters/kotlinx-serialization/src/main/java/retrofit2/converter/kotlinx/serialization/Serializer.kt">
-	<error line="43" column="4" severity="warning" message="This empty block of code can be removed." source="detekt.EmptyDoWhileBlock" />
-</file>
-</checkstyle>
