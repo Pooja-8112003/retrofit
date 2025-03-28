@@ -159,6 +159,5 @@ class RetrofitResponseTypeKeepProcessorTest {
         """.trimMargin(),
       )
   }
-println("added a new workflow")
-println("added a new workflow")
+println("xml file need to read by reviewdog")
 }
