@@ -36,6 +36,6 @@ jobs:
           reporter: github-pr-check
           level: error
           path: detekt.xml
-                golint ./... | reviewdog -f=golint -diff="git diff FETCH_HEAD"
+                golint ./... | reviewdog -f=golint -diff="git diff detekt"
           
          
