@@ -37,6 +37,6 @@ jobs:
           level: error
           path: detekt.xml
         run:
-         $ golint ./... | reviewdog -f=golint -diff="git diff FETCH_HEAD"
+         $ golint ./... | reviewdog -f=golint -diff="git diff detekt"
           
          
