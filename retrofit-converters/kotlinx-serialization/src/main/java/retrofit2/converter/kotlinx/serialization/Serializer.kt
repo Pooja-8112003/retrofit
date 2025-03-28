@@ -44,4 +44,6 @@ internal sealed class Serializer {
     }
   }
 println("adding a new line to the serializer code")
+println("adding another line to the serializer code")
 }
+
