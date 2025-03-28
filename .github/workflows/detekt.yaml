@@ -33,7 +33,9 @@ jobs:
         uses: reviewdog/action-setup@e04ffabe3898a0af8d0fb1af00c188831c4b5893 
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          reporter: github-pr-check
+          reporter: github-check
           level: error
           path: detekt.xml
+        run:
+          reviewdog -f=checkstyle -name="Detekt" 
          
