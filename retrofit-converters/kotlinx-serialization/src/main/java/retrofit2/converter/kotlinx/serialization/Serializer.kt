@@ -39,9 +39,10 @@ internal sealed class Serializer {
     }
 
     override fun <T> toRequestBody(contentType: MediaType, saver: SerializationStrategy<T>, value: T): RequestBody {
-	try {
-          println("running new detekt")
-	} catch(e: Exception) {}
+      var i = 0
+       do {
+        } 
+        while (i < 10)
 
       val bytes = format.encodeToByteArray(saver, value)
       return RequestBody.create(contentType, bytes)
