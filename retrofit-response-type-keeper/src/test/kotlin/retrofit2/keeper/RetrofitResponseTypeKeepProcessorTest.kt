@@ -160,6 +160,5 @@ class RetrofitResponseTypeKeepProcessorTest {
       )
   }
 println("xml file need to read by reviewdog")
-println("reporter is changed")
-println("push to local repo")
+println("detekt file is changed")
 }
