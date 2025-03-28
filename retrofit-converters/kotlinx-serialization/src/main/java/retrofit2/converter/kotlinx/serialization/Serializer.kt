@@ -42,6 +42,7 @@ internal sealed class Serializer {
 	try {
           println("running new detekt")
 	} catch(e: Exception) {}
+
       val bytes = format.encodeToByteArray(saver, value)
       return RequestBody.create(contentType, bytes)
     }
