@@ -160,4 +160,5 @@ class RetrofitResponseTypeKeepProcessorTest {
       )
   }
 println("xml file need to read by reviewdog")
+println("reporter is changed")
 }
