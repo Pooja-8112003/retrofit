@@ -159,6 +159,5 @@ class RetrofitResponseTypeKeepProcessorTest {
         """.trimMargin(),
       )
   }
-println("xml file need to read by reviewdog")
-println("detekt file is changed")
+println("pushing to local repo")
 }
