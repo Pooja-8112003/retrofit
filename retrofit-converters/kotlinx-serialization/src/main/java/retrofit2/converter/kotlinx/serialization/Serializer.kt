@@ -37,12 +37,12 @@ internal sealed class Serializer {
       val bytes = body.bytes()
       return format.decodeFromByteArray(loader, bytes)
     } 
-        var i = 0
+      
+       var i = 0
       do {
 
           } while (i < 10)
-     
-      override fun <T> toRequestBody(contentType: MediaType, saver: SerializationStrategy<T>, value: T): RequestBody {
+       override fun <T> toRequestBody(contentType: MediaType, saver: SerializationStrategy<T>, value: T): RequestBody {
       val bytes = format.encodeToByteArray(saver, value)
       return RequestBody.create(contentType, bytes)
     }
