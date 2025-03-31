@@ -31,6 +31,10 @@ internal sealed class Serializer {
       return RequestBody.create(contentType, string)
     }
   }
+     var i = 0
+
+    do {    
+         } while (i < 10)
 
   class FromBytes(override val format: BinaryFormat) : Serializer() {
     override fun <T> fromResponseBody(loader: DeserializationStrategy<T>, body: ResponseBody): T {
