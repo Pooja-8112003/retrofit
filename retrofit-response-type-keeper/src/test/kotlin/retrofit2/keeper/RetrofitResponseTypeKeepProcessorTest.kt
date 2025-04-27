@@ -159,5 +159,5 @@ class RetrofitResponseTypeKeepProcessorTest {
         """.trimMargin(),
       )
   }
-println("added a new workflow")
+println("pushing to local repo")
 }
