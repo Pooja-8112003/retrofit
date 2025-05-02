@@ -165,7 +165,6 @@ class BehaviorDelegateKotlinTest {
   }
 {
 println("hello world")
-
-
+println("detekt code is modified")
 }
 }
